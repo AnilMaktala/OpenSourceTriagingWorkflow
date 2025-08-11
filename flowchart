@@ -1,0 +1,127 @@
+# Issue Management Workflow
+
+This document describes the issue management workflow process across different organizational lanes: Customer, DGE, DevOps, Engineering, and PM.
+
+## Workflow Overview
+
+The workflow manages the lifecycle of issues from initial customer request through resolution and release, with clear handoffs between different teams and roles.
+
+## Process Flow
+
+### Customer Lane
+1. **New Issue** - Initial issue creation
+2. **Screen and Tag Issue** - Initial triage and categorization
+3. **Potential Issue?** - Decision point to determine if issue is valid
+   - **No** → Assign to DGE & Investigate
+   - **Yes** → Work to Prioritize Issue
+
+### DGE (Data Governance & Engineering) Lane
+4. **Assign to DGE & Investigate** - Deep technical investigation
+5. **Additional Information Required** - Request more details if needed
+6. **Updated Issue/Answer Question** - Provide clarification or resolution
+7. **Close Issue** - Final closure of non-actionable issues
+
+### DevOps Lane
+8. **T-Ops Internal as Sev 2.5** - Internal operational severity classification
+9. **On Call owns SM** - On-call engineer takes ownership of service management
+10. **Confirm/Set Priority in Triage Meetings** - Priority setting in team meetings
+
+### Engineering Lane
+11. **Question/Incorrect Usage?** - Determine if issue is usage-related
+    - **Yes** → Reproduced as Bug or Feature Request
+    - **No** → Update Issue with Release Info
+12. **Feature Request** or **Bug** - Classification of actionable items
+13. **Should Ready Tasks to Assign in Next Sprint** - Sprint planning preparation
+14. **High Sev Bug Work into Current Sprint** - Urgent bug handling
+15. **Release** - Code deployment and release
+16. **Asana Task** - Task tracking in project management system
+
+### PM (Product Management) Lane
+17. **Update Issue with Release Info** - Communication of resolution details
+18. **Close Issue** - Final issue closure with customer notification
+
+## Key Decision Points
+
+### Potential Issue Assessment
+- **Criteria**: Technical validity, business impact, resource requirements
+- **Outcomes**: 
+  - Valid issues proceed to prioritization
+  - Invalid issues go to investigation
+
+### Question/Incorrect Usage Classification
+- **Criteria**: Root cause analysis, user error vs system defect
+- **Outcomes**:
+  - Usage issues get documentation updates
+  - System defects become bugs or feature requests
+
+### Priority Classification
+- **High Severity**: Immediate sprint inclusion
+- **Standard Priority**: Next sprint planning
+- **Low Priority**: Backlog management
+
+## Roles and Responsibilities
+
+### Customer
+- Issue reporting and initial description
+- Providing additional information when requested
+- Validation of resolution
+
+### DGE (Data Governance & Engineering)
+- Technical investigation of complex issues
+- Root cause analysis
+- Technical documentation and knowledge base updates
+
+### DevOps
+- Operational impact assessment
+- Service management and monitoring
+- Priority setting based on system impact
+
+### Engineering
+- Bug reproduction and fixing
+- Feature development
+- Code review and testing
+- Release management
+
+### PM (Product Management)
+- Stakeholder communication
+- Release coordination
+- Customer notification
+- Issue lifecycle management
+
+## Workflow States
+
+1. **New** - Initial state
+2. **Investigating** - Under technical review
+3. **Prioritized** - Scheduled for development
+4. **In Progress** - Active development
+5. **Ready for Release** - Completed and tested
+6. **Released** - Deployed to production
+7. **Closed** - Final resolution communicated
+
+## Success Metrics
+
+- **Time to Resolution**: Average time from issue creation to closure
+- **First Response Time**: Time to initial acknowledgment
+- **Customer Satisfaction**: Resolution quality feedback
+- **Escalation Rate**: Percentage of issues requiring escalation
+- **Recurrence Rate**: Percentage of issues that reopen
+
+## Process Improvements
+
+### Automation Opportunities
+- Automatic severity classification based on keywords
+- Integration between issue tracking and sprint planning tools
+- Automated customer notifications for status changes
+
+### Communication Enhancements
+- Regular status updates to stakeholders
+- Clear escalation paths for urgent issues
+- Standardized templates for different issue types
+
+## Tools Integration
+
+- **Issue Tracking**: Primary system for workflow management
+- **Asana**: Task and project management
+- **Communication**: Slack/Teams for real-time coordination
+- **Monitoring**: System alerts and performance metrics
+- **Documentation**: Knowledge base for common issues and solutions
